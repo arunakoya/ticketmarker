@@ -1,70 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticketmarker</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticketmarker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0b0f19;
+      color: #ffffff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(0,0,0,0.4);
+      position: sticky;
+      top: 0;
+    }
+    header h1 { color: #4da3ff; }
+    nav a {
+      color: #ccc;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+    .hero {
+      padding: 120px 60px;
+      text-align: center;
+      background: radial-gradient(circle at top, #1a2a4f, #0b0f19);
+    }
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      color: #aaa;
+    }
+    .btn {
+      padding: 14px 28px;
+      background: #4da3ff;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 80px 60px;
+    }
+    .card {
+      background: #121826;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    .card h3 { color: #4da3ff; }
+    .about {
+      padding: 80px 60px;
+      text-align: center;
+      background: #0f1524;
+    }
+    footer {
+      padding: 40px;
+      text-align: center;
+      color: #666;
+      background: #05070d;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Regulatory Technology & Consumer Protection</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="hero">
-        <div class="container">
-            <h2>Your Trusted Business Consultants</h2>
-            <p>Empowering businesses with regulatory technology solutions.</p>
-            <a href="#contact" class="btn">Get Started</a>
-        </div>
-    </section>
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>TicketMarker was established in 2019 to provide ticketing solutions, and evolved to providing regulatory technology solutions.</p>
-        </div>
-    </section>
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Ticketing Research</li>
-                <li>Contracts - Spotify</li>
-                <li>Supply Chain solutions</li>
-            </ul>
-        </div>
-    </section>
-    <section id="team">
-        <div class="container">
-            <h2>Meet Our Team</h2>
-            <p>Our team comprises industry experts with decades of experience in various fields. We are here to guide you every step of the way.</p>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Ticketmarker Ltd. All rights reserved.</p>
-        </div>
-    </footer>
+
+<header>
+  <h1>Ticketmarker</h1>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Compliance. Automated. Intelligent.</h2>
+  <p>Ticketmarker helps financial institutions and enterprises stay compliant with real-time monitoring, AI-driven insights, and secure digital identity solutions.</p>
+  <button class="btn">Request Demo</button>
+</section>
+
+<section id="features" class="features">
+  <div class="card">
+    <h3>Real-Time Monitoring</h3>
+    <p>Track regulatory changes and compliance risks as they happen.</p>
+  </div>
+  <div class="card">
+    <h3>AI Risk Detection</h3>
+    <p>Identify anomalies and risks using machine learning models.</p>
+  </div>
+  <div class="card">
+    <h3>Digital Identity</h3>
+    <p>Secure, self-sovereign identity verification for customers.</p>
+  </div>
+  <div class="card">
+    <h3>Audit Automation</h3>
+    <p>Generate reports and maintain audit trails automatically.</p>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About Ticketmarker</h2>
+  <p>We are a regulatory technology company focused on transforming compliance through automation, transparency, and decentralised identity frameworks.</p>
+</section>
+
+<footer id="contact">
+  <p>© 2026 Ticketmarker All rights reserved.</p>
+</footer>
+
 </body>
 </html>
